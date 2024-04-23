@@ -15,3 +15,5 @@ class Application:
         self.header = Header(driver)
         self.main_page = MainPage(driver)
         self.search_result_page = SearchResultsPage(driver)
+
+
