@@ -1,3 +1,4 @@
+import app
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from behave import given, when, then
@@ -15,7 +16,7 @@ SIDE_NAV_ADD_TO_CART_BTN = (By.CSS_SELECTOR, "[data-test='orderPickupButton']")
 
 @given('Open Target main page')
 def open_target(context):
-    context.app.main_page.open_page()
+    context.app.main_page.open_main()
 
 
 @when("Search for {item}")
