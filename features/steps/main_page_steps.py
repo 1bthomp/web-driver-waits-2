@@ -15,7 +15,7 @@ SIDE_NAV_ADD_TO_CART_BTN = (By.CSS_SELECTOR, "[data-test='orderPickupButton']")
 
 @given('Open Target main page')
 def open_target(context):
-    context.app.main_page.open_main()
+    context.app.main_page.open_page()
 
 
 @when("Search for {item}")

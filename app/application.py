@@ -1,9 +1,8 @@
-from pages.main_page import MainPage
-from pages.base_page import Page
-from pages.cart_page import CartPage
-from pages.header import Header
-from pages.main_page import MainPage
-from pages.search_results_page import SearchResultsPage
+from page.base_page import Page
+from page.cart_page import CartPage
+from page.header import Header
+from page.main_page import MainPage
+from page.search_results_page import SearchResultsPage
 
 
 class Application:
@@ -13,7 +12,6 @@ class Application:
         self.base_page = Page(driver)
         self.cart_page = CartPage(driver)
         self.header = Header(driver)
-        self.main_page = MainPage(driver)
         self.search_result_page = SearchResultsPage(driver)
 
 
